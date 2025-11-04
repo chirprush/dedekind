@@ -1,5 +1,5 @@
 <h1 align="center">Dedekind: An AlgNT Library for Rust</h1>
-<h1 align="center"><img src="img/dedekind.png" width=100></img></h1>
+<h1 align="center"><img src="img/dedekind.png" width=50%></img></h1>
 
 `dedekind` is hoping to be a general-purpose library for abstract and number
 theoretic functions in Rust.
