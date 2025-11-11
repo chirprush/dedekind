@@ -1,0 +1,41 @@
+Features:
+- [X] Primes
+  - [ ] Primality testing
+- [X] Linear sieve
+- [ ] Factorizations
+- [ ] Modular arithmetic
+  - [ ] Solving polynomials mod p
+    - [ ] Tonelli Shanks
+  - [ ] Primitive root finding
+  - [ ] Discrete logarithms?
+- [ ] Extended Euclidean algorithm
+- [ ] Elementary NT functions
+- [ ] Legendre/Jacobi symbols
+- [ ] Sum of squares decomposition
+- [ ] Permutations and cycles
+- [ ] Dirichlet convolutions?
+- [ ] Univariate polynomials
+  - [ ] Discriminant
+  - [ ] Implementation
+  - [ ] Operations
+  - [ ] Factoring
+- [ ] Multivariate polynomials?
+- [ ] FFT
+- [ ] NTT
+- [ ] Multiplicative functions sieves
+- [ ] Hensel lifting
+- [ ] Ideals
+- [ ] Number fields
+- [ ] Cyclotomic integers
+- [ ] Special functions
+  - [ ] Riemann zeta
+  - [ ] Dedekind zeta
+  - [ ] General L-functions
+  - [ ] Chebyshev
+  - [ ] Jacobi theta
+- [ ] Finite fields
+- [ ] Roots of unity sieve
+
+Structure:
+- [ ] Generic sieve traits
+- [ ] What's a good notion of arithmetic functions?

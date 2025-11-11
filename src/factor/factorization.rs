@@ -13,15 +13,15 @@ pub struct PrimeFactorization {
     factors: HashMap<Prime, u64>
 }
 
-pub fn new(factors: HashMap<Prime, u64>) -> PrimeFactorization {
-    PrimeFactorization { factors }
-}
-
 // Hmm I'm not really sure whether I want this to be a small object that is
 // fine with clones or a large object that isn't
 impl PrimeFactorization {
     // Maybe get a better name I'm not actually sure. This is a connotative name
     // from a math perspective I guess
+    pub fn new(factors: HashMap<Prime, u64>) -> PrimeFactorization {
+        PrimeFactorization { factors }
+    }
+
 
     // Returns 0 if not in the factors (which is mathematically true)
     pub fn vp(&self, p: Prime) -> u64 {
@@ -50,14 +50,14 @@ impl Mul for PrimeFactorization {
     type Output = Self;
 
     fn mul(self, rhs: Self) -> Self {
-        let pf = PrimeFactorization { factors: HashMap::new() };
+        let mut factors = HashMap::new();
 
         for p in self.bases() {
-            factors.insert(p, factors.get(&p).unwrap_or(0) + self.vp(p));
+            factors.insert(p, factors.get(&p).unwrap_or(&0) + self.vp(p));
         }
 
         for p in rhs.bases() {
-            factors.insert(p, factors.get(&p).unwrap_or(0) + rhs.vp(p));
+            factors.insert(p, factors.get(&p).unwrap_or(&0) + rhs.vp(p));
         }
 
         PrimeFactorization { factors }
